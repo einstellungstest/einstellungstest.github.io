@@ -9,8 +9,9 @@
     <h id="txt">Findest du alle flags? :D</h> <!--flag{also_hier_wäre_nummer1}-->
     
     <script>
-      
+      if(document.cookie == "") document.cookie = "Findest du alle flags? :D";
       document.getElementById("txt").textContent = document.cookie;
+      alert(document.cookie);
       function fun() {
         document.cookie = document.getElementById("hi").value;
       }
